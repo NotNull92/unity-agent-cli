@@ -68,7 +68,7 @@ https://github.com/NotNull92/unity-agent-cli.git?path=AgentConnector
 
 또는 `Packages/manifest.json`에 직접 추가:
 ```json
-"com.notnull92.unity-agent-cli-connector": "https://github.com/NotNull92/unity-agent-cli.git?path=AgentConnector"
+"com.notnull92.hera-agent": "https://github.com/NotNull92/unity-agent-cli.git?path=AgentConnector"
 ```
 
 > 커넥터는 자동으로 시작됩니다. 별도 설정은 필요 없습니다.

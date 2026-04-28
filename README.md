@@ -68,7 +68,7 @@ https://github.com/NotNull92/unity-agent-cli.git?path=AgentConnector
 
 Or add to `Packages/manifest.json`:
 ```json
-"com.notnull92.unity-agent-cli-connector": "https://github.com/NotNull92/unity-agent-cli.git?path=AgentConnector"
+"com.notnull92.hera-agent": "https://github.com/NotNull92/unity-agent-cli.git?path=AgentConnector"
 ```
 
 > The connector starts automatically. No configuration.
