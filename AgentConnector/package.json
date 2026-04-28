@@ -1,7 +1,7 @@
 {
   "name": "com.notnull92.unity-agent-cli-connector",
   "version": "0.3.10",
-  "displayName": "Unity CLI Connector",
+  "displayName": "Hera Agent",
   "description": "HTTP bridge for unity-agent-cli. Receives CLI commands and dispatches to registered tool handlers.",
   "unity": "6000.0",
   "author": {
