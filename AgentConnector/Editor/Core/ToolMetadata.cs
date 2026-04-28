@@ -102,10 +102,15 @@ namespace UnityCliConnector
         {
             try
             {
-                var enumType = Type.GetType(enumName);
-                if (enumType != null && enumType.IsEnum)
+                foreach (var assembly in System.AppDomain.CurrentDomain.GetAssemblies())
                 {
-                    return Enum.GetNames(enumType).ToList();
+                    try
+                    {
+                        var enumType = assembly.GetType(enumName);
+                        if (enumType != null && enumType.IsEnum)
+                            return System.Enum.GetNames(enumType).ToList();
+                    }
+                    catch { }
                 }
             }
             catch

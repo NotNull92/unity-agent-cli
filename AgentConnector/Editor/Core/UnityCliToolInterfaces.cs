@@ -83,12 +83,19 @@ namespace UnityCliConnector
 
         public object HandleCommand(JObject parameters)
         {
-            return HandleCommandInternal(parameters);
+            var typedParams = PreProcess(parameters);
+            if (!Validate(typedParams))
+                return new ErrorResponse("Parameter validation failed");
+            var result = HandleCommandInternal(typedParams);
+            return PostProcess(result);
         }
 
         public object HandleCommand(T parameters)
         {
-            return HandleCommandInternal(parameters);
+            if (!Validate(parameters))
+                return new ErrorResponse("Parameter validation failed");
+            var result = HandleCommandInternal(parameters);
+            return PostProcess(result);
         }
 
         protected virtual object HandleCommandInternal(T parameters)
