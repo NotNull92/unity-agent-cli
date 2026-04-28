@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace UnityCliConnector
+namespace UnityCliConnector.Tools
 {
     /// <summary>
     /// Detects installed third-party asset plugins in the Unity project.
