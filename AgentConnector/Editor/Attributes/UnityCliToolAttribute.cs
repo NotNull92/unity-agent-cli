@@ -33,6 +33,10 @@ namespace UnityCliConnector
         public string Default { get; set; } = "";
         public string OutputSchema { get; set; } = "";
 
+        public ToolParameterAttribute()
+        {
+        }
+
         public ToolParameterAttribute(string description)
         {
             Description = description;
