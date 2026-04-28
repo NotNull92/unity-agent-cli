@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/assets/banner.png?v=2" width="50%" alt="unity-agent-cli banner">
+<img src="docs/assets/banner_v1.png?v=2" width="50%" alt="unity-agent-cli banner">
 
 <br>
 
