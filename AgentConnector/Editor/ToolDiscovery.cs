@@ -142,15 +142,14 @@ namespace UnityCliConnector
                 .ToList();
         }
 
-        private static JObject GetToolMetadata(Type toolType)
+        private static ToolMetadata GetToolMetadata(Type toolType)
         {
             try
             {
                 var attr = toolType.GetCustomAttribute<UnityCliToolAttribute>();
                 var toolName = attr?.Name ?? StringCaseUtility.ToSnakeCase(toolType.Name);
                 ToolMetadataRegistry.Register(toolType);
-                var metadata = ToolMetadataRegistry.GetTool(toolName);
-                return metadata?.ParametersSchema;
+                return ToolMetadataRegistry.GetTool(toolName);
             }
             catch
             {
