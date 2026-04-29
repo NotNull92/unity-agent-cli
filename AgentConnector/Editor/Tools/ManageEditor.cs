@@ -7,7 +7,7 @@ using UnityEditorInternal;
 
 namespace UnityCliConnector.Tools
 {
-    [UnityCliTool(Description = "Controls Unity editor state. Actions: play, stop, pause, refresh, set_active_tool, add_tag, remove_tag, add_layer, remove_layer.")]
+    [UnityCliTool(Description = "Controls Unity editor state. Actions: play, stop, pause, set_active_tool, add_tag, remove_tag, add_layer, remove_layer.")]
     public static class ManageEditor
     {
         private const int FirstUserLayerIndex = 8;

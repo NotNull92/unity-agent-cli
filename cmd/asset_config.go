@@ -163,11 +163,11 @@ func assetConfigToggleAction(id string) error {
 }
 
 func assetConfigDetect() error {
-	// This command needs Unity running — send detect_assets command
-	// For now, just show the config file path and note
+	// This command shows instructions for asset detection.
+	// The actual detection requires Unity running with the Connector package.
 	fmt.Println("에셋 감지를 실행하려면 Unity가 실행 중이어야 합니다.")
 	fmt.Println("Unity 실행 후 아래 명령으로 감지:")
-	fmt.Println("  unity-agent-cli detect_assets")
+	fmt.Println("  unity-agent-cli asset-config detect")
 	fmt.Println()
 	fmt.Printf("Config path: %s\n", assetconfig.ConfigFilePath())
 	return nil
@@ -262,6 +262,6 @@ func loadEnabledAssetsEnv() {
 		}
 	}
 	if len(enabled) > 0 {
-		os.Setenv("UNITY_AGENT_ENABLED_ASSETS", strings.Join(enabled, ","))
+		_ = os.Setenv("UNITY_AGENT_ENABLED_ASSETS", strings.Join(enabled, ","))
 	}
 }

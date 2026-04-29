@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-const checkInterval = 1 * time.Hour
+const checkInterval = 12 * time.Hour
 
 var fetchLatestReleaseFn = fetchLatestRelease
 
