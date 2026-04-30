@@ -40,12 +40,12 @@
 
 **Linux / macOS**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/NotNull92/unity-agent-cli/master/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/NotNull92/unity-agent-cli/main/install.sh | sh
 ```
 
 **Windows**
 ```powershell
-irm https://raw.githubusercontent.com/NotNull92/unity-agent-cli/master/install.ps1 | iex
+irm https://raw.githubusercontent.com/NotNull92/unity-agent-cli/main/install.ps1 | iex
 ```
 
 **또는 `go install`** (어떤 플랫폼이든)

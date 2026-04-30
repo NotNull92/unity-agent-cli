@@ -40,12 +40,12 @@ It is a single Go binary that talks to Unity over HTTP. The Unity-side connector
 
 **Linux / macOS**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/NotNull92/unity-agent-cli/master/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/NotNull92/unity-agent-cli/main/install.sh | sh
 ```
 
 **Windows**
 ```powershell
-irm https://raw.githubusercontent.com/NotNull92/unity-agent-cli/master/install.ps1 | iex
+irm https://raw.githubusercontent.com/NotNull92/unity-agent-cli/main/install.ps1 | iex
 ```
 
 **Or `go install`** (any platform)
